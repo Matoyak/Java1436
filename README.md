@@ -1,7 +1,7 @@
 # Java1436
 Repository Containing Classwork
 
-# Current Classworks:
+### Current Classworks:
 - [ ] Assignment 1
   - Due 06/15/15
 - [ ] Assignment 3 (Where is assignment 2)?
