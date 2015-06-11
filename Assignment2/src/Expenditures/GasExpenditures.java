@@ -7,11 +7,8 @@ import java.util.Scanner;
  */
 public class GasExpenditures {
     public static void main(String[] args) {
-        int tripsPerMonth = -9;
-        double distancePerTrip = -9.99;
-        double distancePerYear = -9.99;
-        double costPerFill = -9.99;
-        double costPerMonth = -9.99;
+        int tripsPerMonth;
+        double distancePerTrip, distancePerYear, costPerFill, costPerMonth;
 
         //Call for input
         Scanner keyboard = new Scanner(System.in);
@@ -22,13 +19,17 @@ public class GasExpenditures {
         System.out.print("How many times do you have to fill up in one month? ");
         tripsPerMonth = keyboard.nextInt();
 
-        //Calculate junk
+        //Calculations
         costPerMonth = tripsPerMonth * costPerFill;
         distancePerYear = 2 * distancePerTrip * tripsPerMonth * 12;
 
         //Basic Output
-        System.out.println("The round-trip distance is: " + (2 * distancePerTrip) + "km");
-        System.out.println("The monthly cost is: $" + costPerMonth);
-        System.out.println("The total mileage per year is: " + distancePerYear + "km");
+        Output(costPerMonth, distancePerTrip, distancePerYear);
+    }
+
+    public static void Output(double cost, double distTrip, double distYr) {
+        System.out.println("The round-trip distance is: " + (2 * distTrip) + "km");
+        System.out.format("The monthly cost is: $%f%n", cost);
+        System.out.println("The total mileage per year is: " + distYr + "km");
     }
 }
