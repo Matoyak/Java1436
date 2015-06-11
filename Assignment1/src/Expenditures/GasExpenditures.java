@@ -6,10 +6,10 @@ import java.util.Scanner;
  * Created by Matoyak on 6/9/2015.
  */
 public class GasExpenditures {
-    public static void main(String[] args) {
-        int tripsPerMonth;
-        double distancePerTrip, distancePerYear, costPerFill, costPerMonth;
+    int tripsPerMonth;
+    double distancePerTrip, distancePerYear, costPerFill, costPerMonth;
 
+    public static void main(String[] args) {
         //Call for input
         Scanner keyboard = new Scanner(System.in);
         System.out.print("How many kilometers away is the nearest gas station? ");
