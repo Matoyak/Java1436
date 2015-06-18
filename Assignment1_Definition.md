@@ -1,4 +1,4 @@
-#Assignment 2
+#Assignment 1
 
 ###Variables Needed:
      - the distance from your home to the nearest gas station (you put any millage)
