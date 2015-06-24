@@ -1,42 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="540d29af-a90b-4da1-8584-9a1c6aaa33b7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignment3.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Assignment3.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="DELETED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\.gradle\2.2\taskArtifacts\cache.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\.gradle\2.2\taskArtifacts\cache.properties.lock" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\.gradle\2.2\taskArtifacts\fileHashes.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\.gradle\2.2\taskArtifacts\fileSnapshots.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\.gradle\2.2\taskArtifacts\outputFileStates.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\.gradle\2.2\taskArtifacts\taskArtifacts.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\Assignment 3.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\build\classes\main\Assignment3.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\gradle\wrapper\gradle-wrapper.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\gradle\wrapper\gradle-wrapper.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\gradlew" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\gradlew.bat" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\settings.gradle" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\src\main\java\Assignment3.java" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\.idea\compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MOVED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\.idea\copyright\profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MOVED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\.idea\gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MOVED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\.idea\libraries\Gradle__junit_junit_4_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_11.xml" />
-      <change type="MOVED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\.idea\libraries\Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="MOVED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\.idea\misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MOVED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\.idea\modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MOVED" beforePath="C:\Users\Matoyak\Documents\GitHub\Java1436\Assignment 3\.idea\vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Assignment 3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Assignment 3/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="540d29af-a90b-4da1-8584-9a1c6aaa33b7" name="Default" comment="" />
     <ignored path="Assignment 3.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -884,12 +849,12 @@
       <updated>1435130408509</updated>
       <workItem from="1435130414600" duration="2427000" />
       <workItem from="1435132913839" duration="222000" />
-      <workItem from="1435133167295" duration="35000" />
+      <workItem from="1435133167295" duration="715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2684000" />
+    <option name="totallyTimeSpent" value="3364000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="654" y="30" width="1266" height="1050" extended-state="0" />
