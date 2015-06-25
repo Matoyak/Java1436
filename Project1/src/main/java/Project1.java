@@ -17,7 +17,7 @@ public class Project1 {
         boolean flag = true, flagBook = true, inputCheck;
         do {
             menu = JOptionPane.showInputDialog(null, "Welcome to Ye Olde University Shoppe!\n"
-                    + "Please browse our wares."
+                    + "Please browse our wares.\n"
                     + "1. Book\n"
                     + "2. Pen\n"
                     + "3. Bag\n"
