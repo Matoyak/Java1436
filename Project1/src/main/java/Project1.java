@@ -11,7 +11,7 @@ public class Project1 {
         final double PRICE_BREAD = 1.23;
         final double TAX_RATE = 0.025;
         final double GREEN_DISCOUNT = 0.6;
-        String menu, menuBook, numBook_s, numPen_s, numBag_s, numBread_s, choiceBook;
+        String menu, menuBook, numBook_s, numPen_s, numBag_s, numBread_s, choice, choiceBook;
         int numBookP = 0, numBookE = 0, numPen = 0, numBag = 0, numBread = 0;
         double total, subTotal, bookCost;
         boolean flag = true, flagBook = true, inputCheck;
@@ -27,7 +27,7 @@ public class Project1 {
                     do {
                         do {
                             inputCheck = true;
-                            menuBook = JOptionPane.showInputDialog(null, "1. eBook\n2. Hard Copy");
+                            menuBook = JOptionPane.showInputDialog(null, "What type of book do you wish to purchase?\n1. eBook\n2. Hard Copy");
                             switch (menuBook) {
                                 case "1":
                                     numBook_s = JOptionPane.showInputDialog(null, "How many eBooks do you wish to purchase?");
@@ -72,17 +72,17 @@ public class Project1 {
                     } while (flagBook);
                 break;
                 case "2":
-                    numPen_s = JOptionPane.showInputDialog(null, "How many Dead Tree Editions do you wish to purchase?");
+                    numPen_s = JOptionPane.showInputDialog(null, "How many pens do you wish to purchase?");
                     numPen += Integer.parseInt(numPen_s);
                     flag = false;
                 break;
                 case "3":
-                    numBag_s = JOptionPane.showInputDialog(null, "How many Dead Tree Editions do you wish to purchase?");
+                    numBag_s = JOptionPane.showInputDialog(null, "How many bags do you wish to purchase?");
                     numBag += Integer.parseInt(numBag_s);
                     flag = false;
                     break;
                 case "4":
-                    numBread_s = JOptionPane.showInputDialog(null, "How many Dead Tree Editions do you wish to purchase?");
+                    numBread_s = JOptionPane.showInputDialog(null, "How many loaves of bread do you wish to purchase?");
                     numBread += Integer.parseInt(numBread_s);
                     flag = false;
                 break;
@@ -91,12 +91,50 @@ public class Project1 {
                     flag = true;
                 break;
             }
+            do {
+                inputCheck = true;
+                choice = JOptionPane.showInputDialog(null, "Do you wish to purchase more items?");
+                switch (choice) {
+                    case "n":
+                    case "no":
+                    case "false":
+                    case "f":
+                    case "0":
+                        flag = false;
+                        inputCheck = false;
+                    break;
+                    case "y":
+                    case "yes":
+                    case "true":
+                    case "t":
+                        flag = true;
+                        inputCheck = false;
+                    break;
+                    default:
+                        JOptionPane.showMessageDialog(null, "Invalid Input.");
+                    break;
+                }
+            } while (inputCheck);
         } while (flag);
 
         bookCost = numBookE * (PRICE_BOOK - PRICE_BOOK * GREEN_DISCOUNT) + numBookP * PRICE_BOOK;
+        //System.out.println(bookCost); //debug
+
         subTotal = bookCost + numPen * PRICE_PEN + numBag * PRICE_BAG;
-        subTotal *= TAX_RATE;
+        //System.out.println(subTotal); //debug
+
+        subTotal *= (1 + TAX_RATE);
+        //System.out.println(subTotal); //debug
+
         total = subTotal + numBread * PRICE_BREAD;
-        JOptionPane.showMessageDialog(null, String.format("The total cost of your order is $%1$3f", total));
+        //System.out.println(total); //debug
+
+        JOptionPane.showMessageDialog(null, "You have purchased: "
+                + numBookE + " eBooks, "
+                + numBookP + " paper books, "
+                + numPen + " pens, "
+                + numBag + " bags, and "
+                + numBread + " loaves of bread.");
+        JOptionPane.showMessageDialog(null, "The total cost of your order is $" + total);
     }
 }
