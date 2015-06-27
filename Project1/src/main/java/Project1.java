@@ -5,6 +5,10 @@ import javax.swing.*;
  */
 public class Project1 {
     public static void main(String[] args) {
+        universityShop();
+    }
+
+    public static void universityShop() {
         final double PRICE_BOOK = 2.23;
         final double PRICE_PEN = 0.27;
         final double PRICE_BAG = 9.50;
@@ -35,15 +39,15 @@ public class Project1 {
                                     numBook_s = JOptionPane.showInputDialog(null, "How many eBooks do you wish to purchase?");
                                     numBookE += Integer.parseInt(numBook_s);
                                     inputCheck = false;
-                                break;
+                                    break;
                                 case "2":
                                     numBook_s = JOptionPane.showInputDialog(null, "How many Dead Tree Editions do you wish to purchase?");
                                     numBookP += Integer.parseInt(numBook_s);
                                     inputCheck = false;
-                                break;
+                                    break;
                                 default:
                                     JOptionPane.showMessageDialog(null, "Invalid Input.");
-                                break;
+                                    break;
                             }
                         } while (inputCheck);
 
@@ -58,26 +62,26 @@ public class Project1 {
                                 case "0":
                                     flagBook = false;
                                     inputCheck = false;
-                                break;
+                                    break;
                                 case "y":
                                 case "yes":
                                 case "true":
                                 case "t":
                                     flagBook = true;
                                     inputCheck = false;
-                                break;
+                                    break;
                                 default:
                                     JOptionPane.showMessageDialog(null, "Invalid Input.");
-                                break;
+                                    break;
                             }
                         } while (inputCheck);
                     } while (flagBook);
-                break;
+                    break;
                 case "2":
                     numPen_s = JOptionPane.showInputDialog(null, "How many pens do you wish to purchase?");
                     numPen += Integer.parseInt(numPen_s);
                     flag = false;
-                break;
+                    break;
                 case "3":
                     numBag_s = JOptionPane.showInputDialog(null, "How many bags do you wish to purchase?");
                     numBag += Integer.parseInt(numBag_s);
@@ -87,11 +91,11 @@ public class Project1 {
                     numBread_s = JOptionPane.showInputDialog(null, "How many loaves of bread do you wish to purchase?");
                     numBread += Integer.parseInt(numBread_s);
                     flag = false;
-                break;
+                    break;
                 default:
                     JOptionPane.showMessageDialog(null, "Invalid Input. Please try again.");
                     flag = true;
-                break;
+                    break;
             }
             do {
                 inputCheck = true;
@@ -104,17 +108,17 @@ public class Project1 {
                     case "0":
                         flag = false;
                         inputCheck = false;
-                    break;
+                        break;
                     case "y":
                     case "yes":
                     case "true":
                     case "t":
                         flag = true;
                         inputCheck = false;
-                    break;
+                        break;
                     default:
                         JOptionPane.showMessageDialog(null, "Invalid Input.");
-                    break;
+                        break;
                 }
             } while (inputCheck);
         } while (flag);

@@ -5,6 +5,10 @@ import javax.swing.*;
  */
 public class Assignment5 {
     public static void main(String[] args) {
+        ticket();
+    }
+
+    public static void ticket() {
         final double BASE_PRICE = 10.00;
         final double DISCOUNT_CHILD = 0.30;
         final double DISCOUNT_ELD = 0.20;

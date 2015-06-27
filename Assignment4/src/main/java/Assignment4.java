@@ -6,6 +6,9 @@ import javax.swing.*;
  */
 public class Assignment4 {
     public static void main(String[] args) {
+        javaJava();
+    }
+    public static void javaJava() {
         final double COST_COFFEE = 1.00;
         final double COST_TEA = 1.00;
         final double COST_CAP = 2.99;
@@ -24,7 +27,7 @@ public class Assignment4 {
             switch (menu) {
                 case "1":
                     JOptionPane.showMessageDialog(null, "Your coffee will cost $" + COST_COFFEE);
-                break;
+                    break;
                 case "2":
                     do {
                         inputCheck = false;
@@ -34,18 +37,18 @@ public class Assignment4 {
                                 JOptionPane.showMessageDialog(null, "There will be no extra charge.");
                                 JOptionPane.showMessageDialog(null, "Your tea will cost $" + COST_TEA);
                                 inputCheck = true;
-                            break;
+                                break;
                             case "2":
                                 JOptionPane.showMessageDialog(null, "There will be a 50 cent charge.");
                                 JOptionPane.showMessageDialog(null, "Your tea will cost $" + (COST_TEA + WHOLE_CHARGE));
                                 inputCheck = true;
-                            break;
+                                break;
                             default:
                                 JOptionPane.showMessageDialog(null, "Invalid Input.");
-                            break;
+                                break;
                         }
                     } while (!inputCheck);
-                break;
+                    break;
                 case "3":
                     do {
                         inputCheck = false;
@@ -65,13 +68,13 @@ public class Assignment4 {
                                 JOptionPane.showMessageDialog(null, "Invalid Input.");
                                 break;                        }
                     } while (!inputCheck);
-                break;
+                    break;
                 case "4":
                     JOptionPane.showMessageDialog(null, "Your latte will cost $" + COST_LAT);
-                break;
+                    break;
                 default:
                     JOptionPane.showMessageDialog(null, "Invalid Input. Please try again.");
-                break;
+                    break;
             }
             do {
                 inputCheck = false;
