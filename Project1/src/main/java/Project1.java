@@ -11,10 +11,12 @@ public class Project1 {
         final double PRICE_BREAD = 1.23;
         final double TAX_RATE = 0.025;
         final double GREEN_DISCOUNT = 0.6;
+
         String menu, menuBook, numBook_s, numPen_s, numBag_s, numBread_s, choice, choiceBook;
         int numBookP = 0, numBookE = 0, numPen = 0, numBag = 0, numBread = 0;
         double total, subTotal, bookCost;
         boolean flag = true, flagBook = true, inputCheck;
+
         do {
             menu = JOptionPane.showInputDialog(null, "Welcome to Ye Olde University Shoppe!\n"
                     + "Please browse our wares.\n"

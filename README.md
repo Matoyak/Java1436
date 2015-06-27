@@ -8,9 +8,9 @@ Repository Containing Classwork
   - Due 06/25/2015
 - [x] Assignment 3
   - Due 06/26/2015
-- [ ] Assignment 4
+- [x] Assignment 4 //1.0.0
   - Due 06/27/2015
-- [ ] Assignment 5
+- [x] Assignment 5 //1.0.0
   - Due 06/30/2015
 
 ### Projects:
