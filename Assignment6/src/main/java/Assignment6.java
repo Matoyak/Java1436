@@ -13,18 +13,32 @@ public class Assignment6 {
 
     public static void frontToBack() {
         int sentinel = 0;
+        String s = "";
         while (sentinel <= 10) {
-            JOptionPane.showMessageDialog(null, sentinel);
-            sentinel++;
+            s += sentinel;
+            if (sentinel < 10) {
+                s += ", ";
+            } else {
+                s += ".";
+            }
+            ++sentinel;
         }
+        JOptionPane.showMessageDialog(null, s);
     }
 
     public static void backToFront() {
         int sentinel = 10;
+        String s = "";
         while (sentinel >= 0) {
-            JOptionPane.showMessageDialog(null, sentinel);
-            sentinel--;
+            s += sentinel;
+            if (sentinel > 0) {
+                s += ", ";
+            } else {
+                s += ".";
+            }
+            --sentinel;
         }
+        JOptionPane.showMessageDialog(null, s);
     }
 
     public static void javaJava() {
