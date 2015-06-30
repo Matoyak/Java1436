@@ -15,8 +15,8 @@ public class CheckingAccount {
     //Constructors
     CheckingAccount() {
         balance = 200.0;
-        interest = 0.3;
-        penalty = 0.2;
+        interest = 0.03;
+        penalty = 0.02;
         accountName = "Jane Doe";
     }
 
@@ -32,7 +32,8 @@ public class CheckingAccount {
     public void withdraw(double num) {
         if (num > balance) {
             JOptionPane.showMessageDialog(null, "You do not have enough money to do this withdrawal.\n"
-                    + "There will be a " + penalty * 100 + "percent penalty for over-withdrawal.");
+                    + "There will be a " + penalty * 100 + " percent penalty for over-withdrawal.");
+            balance -= num;
         } else {
             balance -= num;
         }
