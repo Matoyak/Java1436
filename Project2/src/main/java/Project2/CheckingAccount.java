@@ -9,28 +9,30 @@ import javax.swing.*;
 public class CheckingAccount {
     private double balance;
     private double interest;
+    private double penalty;
     private String accountName;
 
     //Constructors
     CheckingAccount() {
-        balance = 0.0;
-        interest = 0.0;
+        balance = 200.0;
+        interest = 0.3;
+        penalty = 0.2;
         accountName = "Jane Doe";
     }
 
-    CheckingAccount(double num, double num2, String name) {
+    CheckingAccount(double num, double num2, double num3, String name) {
         balance = num;
         interest = num2;
+        penalty = num3;
         accountName = name;
     }
 
-    public void deposit(double num) {
-        balance += num;
-    }
+    public void deposit(double num) {balance += num;}
 
     public void withdraw(double num) {
         if (num > balance) {
-            JOptionPane.showMessageDialog(null, "You do not have enough money to do this withdrawal.");
+            JOptionPane.showMessageDialog(null, "You do not have enough money to do this withdrawal.\n"
+                    + "There will be a " + penalty * 100 + "percent penalty for over-withdrawal.");
         } else {
             balance -= num;
         }
@@ -44,6 +46,10 @@ public class CheckingAccount {
     public void setInterest(double num) {interest = num;}
 
     public double getInterest() {return interest;}
+
+    public void setPenalty(double num) {penalty = num;}
+
+    public double getPenalty() {return penalty;}
 
     public void setAccountName(String name) {accountName = name;}
 
