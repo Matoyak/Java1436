@@ -14,7 +14,7 @@ Repository Containing Classwork
   - Due 06/30/2015 //1.1.0
 - [x] Assignment 6 (CH4,1)
   - Due 07/06/2015
-- [ ] Assignment 7 (CH4,2)
+- [x] Assignment 7 (CH4,2)
   - Due 07/10/2015
 
 ### Projects:
