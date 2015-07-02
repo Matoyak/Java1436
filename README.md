@@ -12,10 +12,21 @@ Repository Containing Classwork
   - Due 06/27/2015 //1.1.0
 - [x] Assignment 5 (CH3,3)
   - Due 06/30/2015 //1.1.0
-- [ ] Assignment 6 (CH4,1)
+- [x] Assignment 6 (CH4,1)
+  - Due 07/06/2015
+- [ ] Assignment 7 (CH4,2)
+  - Due 07/10/2015
 
 ### Projects:
 - [x] Project 1
   - Due 06/26/2015 //1.3.0
-- [ ] Project 2
+- [x] Project 2
   - Due 07/14/2015
+
+### Quizes:
+- [x] Quiz One (CH2)
+  - Due 07/03/2015
+
+### Tests:
+- [ ] Midterm
+  - Due 07/06/2015
