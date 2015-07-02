@@ -1,5 +1,7 @@
 #Midterm
 
+###07/06/2015
+
 - There are twenty multiple questions similar to the Quiz for CH 2.
 - There will be five short answers questions similar to those outlined below:
     - You need to know the differences between object, classes, and reference variables.

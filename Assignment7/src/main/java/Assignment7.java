@@ -32,7 +32,7 @@ public class Assignment7 {
 
     static void fLoop() {
         int sum = 0;
-        double mean = 0.0;
+        double mean;
         for (int i = 1; i<=100; ++i) {
             sum += i;
         }
