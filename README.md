@@ -16,6 +16,8 @@ Repository Containing Classwork
   - Due 07/06/2015
 - [x] Assignment 7 (CH4,2)
   - Due 07/10/2015
+- [ ] Assignment 8 (CH5,1)
+  - Due ???
 
 ### Projects:
 - [x] Project 1
@@ -28,5 +30,5 @@ Repository Containing Classwork
   - Due 07/03/2015
 
 ### Tests:
-- [ ] Midterm
+- [x] Midterm
   - Due 07/06/2015
