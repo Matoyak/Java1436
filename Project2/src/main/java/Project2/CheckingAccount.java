@@ -17,6 +17,7 @@ public class CheckingAccount {
         balance = 200.0;
         interest = 0.03;
         penalty = 0.02;
+
         accountName = "Jane Doe";
     }
 
@@ -40,19 +41,19 @@ public class CheckingAccount {
     }
 
     //getters and setters
-    public void setBalance(double num) {balance = num;}
+    public void setBalance(double balance) {this.balance = balance;}
 
     public double getBalance() {return balance;}
 
-    public void setInterest(double num) {interest = num;}
+    public void setInterest(double interest) {this.interest = interest;}
 
     public double getInterest() {return interest;}
 
-    public void setPenalty(double num) {penalty = num;}
+    public void setPenalty(double penalty) {this.penalty = penalty;}
 
     public double getPenalty() {return penalty;}
 
-    public void setAccountName(String name) {accountName = name;}
+    public void setAccountName(String accountName) {this.accountName = accountName;}
 
     public String getAccountName() {return accountName;}
 }
