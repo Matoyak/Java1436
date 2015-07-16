@@ -12,7 +12,9 @@ public class MyCars {
     public static void main(String[] args) {
         List<Car> cars = new ArrayList<>();
         Car car1 = new Car();
+        cars.add(car1);
         Car car2 = new Car("Dodge","Mustang");
+        cars.add(car2);
         display(cars);
     }
 

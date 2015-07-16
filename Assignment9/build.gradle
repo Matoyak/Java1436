@@ -1,4 +1,4 @@
-group 'com.Java1436.Assign9'
+group 'com.Java1436.Assignment9'
 version '1.0.0'
 
 apply plugin: 'java'
