@@ -17,13 +17,17 @@ Repository Containing Classwork
 - [x] Assignment 7 (CH4,2)
   - Due 07/10/2015
 - [x] Assignment 8 (CH5,1)
-  - Due ???
+  - Due 07/21/2015
+- [ ] Assignment 9 (CH6,1)
+  - Due 07/22/2015
 
 ### Projects:
 - [x] Project 1
   - Due 06/26/2015 //1.3.0
 - [x] Project 2
   - Due 07/14/2015
+- [ ] Project 3
+  - Due 08/03/2015
 
 ### Quizes:
 - [x] Quiz One (CH2)

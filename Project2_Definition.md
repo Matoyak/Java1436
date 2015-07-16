@@ -14,6 +14,6 @@
         - 18.00
 - Create a file called weeklyReport.txt.
 	- Write the following report into the file:
-    	- The final balance from checking transaction
-    	- 2% penalty applied to the account,  if the balance is below zero
-    	- 3% of interest applied to the balance, if the balance over 10 dollars
+        - The final balance from checking transaction
+        - 2% penalty applied to the account,  if the balance is below zero
+        - 3% of interest applied to the balance, if the balance over 10 dollars
