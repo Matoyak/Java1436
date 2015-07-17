@@ -24,7 +24,7 @@ public class MyBooks {
         } while (flag);
 
         if (books.size() == 0) {
-            JOptionPane.showMessageDialog(null, "The array is empty. No Sorting or Searching can be done.");
+            JOptionPane.showMessageDialog(null, "There are no books. No Sorting or Searching can be done.");
             flag = false;
         } else {
             flag = true;
@@ -57,9 +57,11 @@ public class MyBooks {
     }
 
     public static void display(List<Book> books) {
+        String output = "";
         for (Book b : books) {
-            JOptionPane.showMessageDialog(null, "Make: " + b.getName() + "\nModel: " + b.getGenre());
+            output += "Name: " + b.getName() + "\nGenre: " + b.getGenre() + "\n\n";
         }
+        JOptionPane.showMessageDialog(null, output);
     }
 
     public static void sortBooksName(List<Book> books) {
@@ -83,13 +85,17 @@ public class MyBooks {
 
     public static void sortBooksGenre(List<Book> books) {
         Book tempBook = new Book();
-        int i, j;
+        int i, j, k = 0;
 
         for (i = 1; i < books.size(); ++i) {
             tempBook.setName(books.get(i).getName());
             tempBook.setGenre(books.get(i).getGenre());
             j = i;
-            while (j > 0 && (books.get(j - 1).getGenre().charAt(0) > tempBook.getGenre().charAt(0))) {
+            while (j > 0 && (books.get(j - 1).getGenre().charAt(k) > tempBook.getGenre().charAt(k))) {
+                    /*if (books.get(j - 1).getGenre().charAt(k) == tempBook.getGenre().charAt(k) && books.get(j-1).getGenre().length() != tempBook.getGenre().length()) {
+                        ++k;
+                        continue;
+                }*/
                 books.get(j).setName(books.get(j - 1).getName());
                 books.get(j).setGenre(books.get(j - 1).getGenre());
                 j -= 1;
@@ -98,5 +104,9 @@ public class MyBooks {
             books.get(j).setGenre(tempBook.getGenre());
         }
         display(books);
+    }
+
+    public static String binarySearch() {
+        return "There are no books.";
     }
 }
