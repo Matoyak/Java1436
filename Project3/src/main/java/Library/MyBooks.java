@@ -42,14 +42,14 @@ public class MyBooks {
                     if (confirm == JOptionPane.NO_OPTION || confirm == JOptionPane.CANCEL_OPTION) {
                         flag = false;
                     }
-                break;
+                    break;
                 case "2":
                     sortBooksGenre(books);
                     confirm = JOptionPane.showConfirmDialog(null, "Do you wish to sort again?");
                     if (confirm == JOptionPane.NO_OPTION || confirm == JOptionPane.CANCEL_OPTION) {
                         flag = false;
                     }
-                break;
+                    break;
                 default:
                     JOptionPane.showMessageDialog(null, "Invalid input. Please try again.");
             }
@@ -85,17 +85,20 @@ public class MyBooks {
 
     public static void sortBooksGenre(List<Book> books) {
         Book tempBook = new Book();
-        int i, j, k = 0;
+        int i, j, k;
 
         for (i = 1; i < books.size(); ++i) {
             tempBook.setName(books.get(i).getName());
             tempBook.setGenre(books.get(i).getGenre());
+            k = 0;
             j = i;
-            while (j > 0 && (books.get(j - 1).getGenre().charAt(k) > tempBook.getGenre().charAt(k))) {
-                    /*if (books.get(j - 1).getGenre().charAt(k) == tempBook.getGenre().charAt(k) && books.get(j-1).getGenre().length() != tempBook.getGenre().length()) {
-                        ++k;
-                        continue;
-                }*/
+            /*while (books.get(j - 1).getGenre().toLowerCase().charAt(k) == tempBook.getGenre().toLowerCase().charAt(k) && books.get(j - 1).getGenre().length() != tempBook.getGenre().length()) {
+                ++k;
+                System.out.println("k: " + k);
+            }*/
+            while (j > 0 && (books.get(j - 1).getGenre().toLowerCase().charAt(k) > tempBook.getGenre().toLowerCase().charAt(k))) {
+                /*System.out.println(books.get(j - 1).getGenre().toLowerCase().charAt(k));
+                System.out.println(tempBook.getGenre().toLowerCase().charAt(k));*/
                 books.get(j).setName(books.get(j - 1).getName());
                 books.get(j).setGenre(books.get(j - 1).getGenre());
                 j -= 1;
