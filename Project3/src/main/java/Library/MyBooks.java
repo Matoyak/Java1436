@@ -54,6 +54,7 @@ public class MyBooks {
                     JOptionPane.showMessageDialog(null, "Invalid input. Please try again.");
             }
         } while (flag);
+        binarySearch(books,"Apple", "1", 0, books.size());
     }
 
     public static void display(List<Book> books) {
@@ -72,7 +73,9 @@ public class MyBooks {
             tempBook.setName(books.get(i).getName());
             tempBook.setGenre(books.get(i).getGenre());
             j = i;
-            while (j > 0 && (books.get(j - 1).getName().charAt(0) > tempBook.getName().charAt(0))) {
+            char bCh = books.get(j - 1).getName().charAt(0);
+            char tCh = tempBook.getName().charAt(0);
+            while (j > 0 && bCh > tCh) {
                 books.get(j).setName(books.get(j - 1).getName());
                 books.get(j).setGenre(books.get(j - 1).getGenre());
                 j -= 1;
@@ -80,7 +83,7 @@ public class MyBooks {
             books.get(j).setName(tempBook.getName());
             books.get(j).setGenre(tempBook.getGenre());
         }
-        display(books);
+       // display(books);
     }
 
     public static void sortBooksGenre(List<Book> books) {
@@ -92,13 +95,9 @@ public class MyBooks {
             tempBook.setGenre(books.get(i).getGenre());
             k = 0;
             j = i;
-            /*while (books.get(j - 1).getGenre().toLowerCase().charAt(k) == tempBook.getGenre().toLowerCase().charAt(k) && books.get(j - 1).getGenre().length() != tempBook.getGenre().length()) {
-                ++k;
-                System.out.println("k: " + k);
-            }*/
-            while (j > 0 && (books.get(j - 1).getGenre().toLowerCase().charAt(k) > tempBook.getGenre().toLowerCase().charAt(k))) {
-                /*System.out.println(books.get(j - 1).getGenre().toLowerCase().charAt(k));
-                System.out.println(tempBook.getGenre().toLowerCase().charAt(k));*/
+            char bCh = books.get(j - 1).getGenre().toLowerCase().charAt(k);
+            char tCh = tempBook.getGenre().toLowerCase().charAt(k);
+            while (j > 0 && bCh > tCh) {
                 books.get(j).setName(books.get(j - 1).getName());
                 books.get(j).setGenre(books.get(j - 1).getGenre());
                 j -= 1;
@@ -106,10 +105,53 @@ public class MyBooks {
             books.get(j).setName(tempBook.getName());
             books.get(j).setGenre(tempBook.getGenre());
         }
-        display(books);
+        //display(books);
     }
 
-    public static String binarySearch() {
-        return "There are no books.";
+    public static String binarySearch(List<Book> books, String key, String choice, int min, int max) {
+        /*switch (choice) {
+            case "1":
+                sortBooksName(books);
+                break;
+            case "2":
+                sortBooksGenre(books);
+                break;
+            default:
+                return "ERROR: Invalid Input.";
+        }*/
+        switch (choice) {
+            case "1":
+                if (max < min) {
+                    return "Item Not Found.";
+                } else {
+                    int midpoint = books.size() / 2;
+                    String searchValue = books.get(midpoint).getName();
+                    int compValue = key.compareToIgnoreCase(searchValue);
+                    if (compValue > 0) {
+                        return binarySearch(books, key, choice, min, midpoint - 1);
+                    } else if (compValue < 0) {
+                        return binarySearch(books, key, choice, midpoint + 1, max);
+                    } else {
+                        return searchValue;
+                    }
+                }
+            case "2":
+                if (max < min) {
+                    return "Item Not Found.";
+                } else {
+                    int midpoint = books.size() / 2;
+                    String searchValue = books.get(midpoint).getGenre();
+                    int compValue = key.compareToIgnoreCase(searchValue);
+                    if (compValue > 0) {
+                        return binarySearch(books, key, choice, min, midpoint - 1);
+                    } else if (compValue < 0) {
+                        return binarySearch(books, key, choice, midpoint + 1, max);
+                    } else {
+                        return searchValue;
+                    }
+                }
+            default:
+                return "ERROR: Invalid Input.";
+        }
     }
 }
