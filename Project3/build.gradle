@@ -1,5 +1,5 @@
 group 'com.Java1436.Project3'
-version '1.0.1'
+version '1.2.0'
 
 apply plugin: 'java'
 

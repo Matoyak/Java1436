@@ -54,7 +54,33 @@ public class MyBooks {
                     JOptionPane.showMessageDialog(null, "Invalid input. Please try again.");
             }
         } while (flag);
-        binarySearch(books,"Apple", "1", 0, books.size());
+
+        flag = true;
+        do {
+            String choice = JOptionPane.showInputDialog("How do you wish to search your books:\n"
+                    + "1. Name\n"
+                    + "2. Genre");
+
+            switch (choice) {
+                case "1":
+                    searchBooksName(books);
+                    int confirm = JOptionPane.showConfirmDialog(null, "Do you wish to search again?");
+                    if (confirm == JOptionPane.NO_OPTION || confirm == JOptionPane.CANCEL_OPTION) {
+                        flag = false;
+                    }
+                    break;
+                case "2":
+                    searchBooksGenre(books);
+                    confirm = JOptionPane.showConfirmDialog(null, "Do you wish to search again?");
+                    if (confirm == JOptionPane.NO_OPTION || confirm == JOptionPane.CANCEL_OPTION) {
+                        flag = false;
+                    }
+                    break;
+                default:
+                    JOptionPane.showMessageDialog(null, "Invalid input. Please try again.");
+            }
+        } while (flag);
+        //binarySearch(books,"Apple", "1", 0, books.size());
     }
 
     public static void display(List<Book> books) {
@@ -83,7 +109,7 @@ public class MyBooks {
             books.get(j).setName(tempBook.getName());
             books.get(j).setGenre(tempBook.getGenre());
         }
-       // display(books);
+        display(books);
     }
 
     public static void sortBooksGenre(List<Book> books) {
@@ -105,11 +131,46 @@ public class MyBooks {
             books.get(j).setName(tempBook.getName());
             books.get(j).setGenre(tempBook.getGenre());
         }
-        //display(books);
+        display(books);
     }
 
-    public static String binarySearch(List<Book> books, String key, String choice, int min, int max) {
-        /*switch (choice) {
+    private static void searchBooksName(List<Book> books) {
+        String name = JOptionPane.showInputDialog("Please enter the name to search for: ");
+        boolean check = false;
+        for(Book b : books){
+            if(b.getName().equalsIgnoreCase(name)) {
+                JOptionPane.showMessageDialog(null, "We have found "+b.getName() + ".");
+                check = true;
+            }
+        }
+        if (!check) {
+            JOptionPane.showMessageDialog(null, "We did not find any books by that name.");
+        }
+    }
+
+    private static void searchBooksGenre(List<Book> books) {
+        String genre = JOptionPane.showInputDialog("Please enter the name to search for: ");
+        boolean check = false;
+        for(Book b : books){
+            if(b.getGenre().equalsIgnoreCase(genre)) {
+                JOptionPane.showMessageDialog(null, "We have found "+b.getGenre() + ".");
+                check = true;
+            }
+        }
+        if (!check) {
+            JOptionPane.showMessageDialog(null, "We did not find any books with that genre.");
+        }
+    }
+
+
+
+    //I could not get this to properly work. Due to work, I ran out of time. I believe the issue is due to the recursion
+    //and going too complex too quickly. I built it up too quickly to fully grasp, especially when combined with the
+    //unfortunate dirtiness of my sorting and searching algs. I could break it down and fix it, but I am running out of
+    //time. So linear search unconnected to sort, rather than a binary search.
+
+    /*public static String binarySearch(List<Book> books, String key, String choice, int min, int max) {
+        *//*switch (choice) {
             case "1":
                 sortBooksName(books);
                 break;
@@ -118,7 +179,7 @@ public class MyBooks {
                 break;
             default:
                 return "ERROR: Invalid Input.";
-        }*/
+        }*//*
         switch (choice) {
             case "1":
                 if (max < min) {
@@ -153,5 +214,5 @@ public class MyBooks {
             default:
                 return "ERROR: Invalid Input.";
         }
-    }
+    }*/
 }
